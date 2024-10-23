@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Truths and 1 Lie</title>
+    </head>
+    <body style="background-color: aliceblue">
+        <h1>Sonya's Truth and Lie Game</h1>
+        <hr />
+
+        <h2>Introductions</h2>
+        <form action="" id="name-form">
+            <label for="fname">First Name:</label><br />
+            <input type="text" id="fname" /><br />
+            <label for="lname">Last Name:</label><br />
+            <input type="text" id="lname" /><br />
+            <label for="age">Age:</label><br />
+            <input type="number" id="age" /><br />
+        </form>
+        <br/>
+        <input type="button" value="Submit" onclick="greet();" />
+        <p id="greet" style="font-size: x-large">Welcome!</p>
+        <hr>
+
+        <h2>Warm up trivia question</h2>
+        <p>What is the only food that cannot go bad?</p>
+        <p id="trivial-answer"></p>
+        <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br>
+        </form>
+        <br />
+        <input type="button" value="Submit" onclick="trivia1();" />
+        <hr>
+
+        <h2>2 truths and 1 Lie!</h2>
+        <p>Select the untrue statement:</p>
+        <p id="lieoptions"></p>
+        <form action="">
+            <input type="radio" name="truth1" id="dog">
+            <label for="dogs">My favorite animal is a dog</label> <br>
+            <input type="radio" name="truth1" id="lie">
+            <label for="lie">My family hates traveling</label> <br>
+            <input type="radio" name="truth1" id="born">
+            <label for="born">I was born in New Jersey</label> <br>
+        </form>
+        <br />
+        <input type="button" value="Submit" onclick="truth1();" />
+     
+
+        <script src="js/truth.js"></script>
+    </body>
+</html>
